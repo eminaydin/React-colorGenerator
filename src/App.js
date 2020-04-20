@@ -5,13 +5,23 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.setState({
-      
-    })
+   
     this.colorGenerator=this.colorGenerator.bind(this)
   }
 colorGenerator() {
-document.querySelector(".App").remove();
+document.querySelector("h2").className = "hidden";
+
+    let letters = "0123456789ABCDEF"; 
+    let color = '#'; 
+    for (let i = 0; i < 6; i++) 
+       color += letters[(Math.floor(Math.random() * 16))];
+      
+       let divs = document.createElement("li");
+       divs.innerHTML =  `
+       <div class="color-divs"></div>`
+       divs.style.backgroundColor = color;
+       document.querySelector(".App").appendChild(divs)
+       
 }
   render() {
     return (

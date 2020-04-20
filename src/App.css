@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+.hidden {
+  visibility: hidden;
+}
+.color-divs {
+  height: 200px;
+  width: 300px;
+
+}
+li {
+  list-style-type: none;
+  margin: 30px;
+}
