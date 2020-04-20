@@ -1,16 +1,21 @@
 .App {
   text-align: center;
+
 }
 
 .hidden {
   visibility: hidden;
 }
-.color-divs {
-  height: 200px;
-  width: 300px;
 
+.colored-divs {
+  display: none;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 }
-li {
-  list-style-type: none;
-  margin: 30px;
+.visible {
+  height: 200px;
+  width: 200px;
+ margin: 20px;
 }
