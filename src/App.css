@@ -2,20 +2,3 @@
   text-align: center;
 
 }
-
-.hidden {
-  visibility: hidden;
-}
-
-.colored-divs {
-  display: none;
-  height: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
-}
-.visible {
-  height: 200px;
-  width: 200px;
- margin: 20px;
-}
