@@ -1,4 +1,42 @@
 .App {
-  text-align: center;
-
+text-align: center;
+height: 100vh;
+display: flex;
+flex-flow: row wrap;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  width: 100%;
+  }
+
+  .create-btn {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+margin-bottom: 20px;
+  }
+  .colored-divs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+  .each-div {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+  }
+  .each-div > button {
+    justify-content: flex-end;
+  }
+ 

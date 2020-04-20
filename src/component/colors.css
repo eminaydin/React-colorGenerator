@@ -1,0 +1,13 @@
+.each-div {
+    height: 300px;
+    width: 300px;
+}
+
+.color-div {
+   height: 200px;
+   border-radius: 5%;
+}
+.delete-btn {
+    display: block;
+    margin: 10px auto;
+}

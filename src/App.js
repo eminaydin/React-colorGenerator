@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import ColorSwatch from "./component/colors.js";
+import "materialize-css";
+import { Button } from "react-materialize";
 
 class App extends React.Component {
   constructor(props) {
@@ -37,19 +39,27 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.colors.length === 0 ? (
-          <h2>There are no colors yet.</h2>
-        ) : (
-          <div className="colored-divs">
-            {this.state.colors.map((item) => {
-              return (
-                <ColorSwatch color={item} removeHandler={this.removeColor} />
-              );
-            })}
-          </div>
-        )}
-
-        <button onClick={this.addColor}>Create a color</button>
+        <div className="main">
+          {this.state.colors.length === 0 ? (
+            <h2>There are no colors yet.</h2>
+          ) : (
+            <div className="colored-divs">
+              {this.state.colors.map((item) => {
+                return (
+                  <ColorSwatch color={item} removeHandler={this.removeColor} />
+                );
+              })}
+            </div>
+          )}
+          <Button
+            node="button"
+            waves="light"
+            onClick={this.addColor}
+            className="create-btn"
+          >
+            Create a color
+          </Button>
+        </div>
       </div>
     );
   }
