@@ -41,9 +41,12 @@ class App extends React.Component {
       <div className="App">
         <div className="main">
           {this.state.colors.length === 0 ? (
+          <div className="initial-info"> 
             <h2>There are no colors yet.</h2>
+            <h3>Click the button to generate random colors.</h3>
+            </div>
           ) : (
-            <div className="colored-divs">
+            <div className="outer-div">
               {this.state.colors.map((item) => {
                 return (
                   <ColorSwatch color={item} removeHandler={this.removeColor} />
