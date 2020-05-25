@@ -1,13 +1,13 @@
 import React from "react";
-import {Button} from 'react-materialize';
+import { Button } from 'react-materialize';
 import "./colors.css"
 
 const ColorSwatch = (props) => {
   return (
-    <div className="each-div"> 
-    
-    <div className="color-div" style={{ backgroundColor: props.color }}></div>
-    <span> {props.color} </span> 
+    <div className="each-div">
+
+      <div className="color-div" style={{ backgroundColor: props.color }}></div>
+      <span> {props.color} </span>
       <Button
         onClick={() => {
           props.removeHandler(props.color);
@@ -15,8 +15,8 @@ const ColorSwatch = (props) => {
         className="delete-btn"
       >
         Delete
-      </Button> 
-    
+      </Button>
+
     </div>
   );
 };

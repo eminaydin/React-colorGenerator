@@ -1,21 +1,21 @@
 .each-div {
-    height: 250px;
-    width: 250px;
-    margin: 20px;
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
 }
 .each-div > button {
-    justify-content: flex-end;
-  }
+  justify-content: flex-end;
+}
 
 .color-div {
-   height: 200px;
-   border-radius: 5%;
-   box-shadow: 0 0 15px 0px
+  height: 200px;
+  border-radius: 5%;
+  box-shadow: 0 0 15px 0px;
 }
 .delete-btn {
-    display: block;
-    margin: 5px auto;
+  display: block;
+  margin: 5px auto;
 }
