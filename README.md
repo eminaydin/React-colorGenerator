@@ -1,3 +1,8 @@
-In this project I've created responsoive simple color generator. I've done this project with Vanilla JS before but I wanted to challenge myself into doing this in React. To generate color wasn't difficult at all but to remove it from DOM was tricky. Then I've came up with an idea to store generated colors in array so that when user wants to remove it I could simply remove the corresponding color from the array. This approach made my task even easier and from there on I haven't encountered with much problems. 
+## The Project
+This is the re-making of same project that has previously done by using Javascript by me. This time I switched the language to React to challenge myself. As I already knew a way to do exactly same thing in Javascript it was particularly challenging to step out of my comfort zone and use another language for the same purpose.
 
+Main aim here was to generate random colors on each click of button. And I thought of a way to store colors in array and then display it on DOM as I wanted to display all the colors, not only a single one. So I stored the colors in array and removed them from there if user clicks the delete button.
+
+## Challenges
+It needs a specific logic to create a random color by using hex codes. I've invested some time on finding solution on that. Not so later I found the way of handling this specific problem. This struggle helped me quite a lot to understand the logic of HTML color codes and how they work. 
 You can check the live version here: https://react-color-generator.netlify.app/
