@@ -1,11 +1,10 @@
 import React from "react";
-import { Button } from 'react-materialize';
-import "./colors.css"
+import { Button } from "react-materialize";
+import "./colors.css";
 
 const ColorSwatch = (props) => {
   return (
     <div className="each-div">
-
       <div className="color-div" style={{ backgroundColor: props.color }}></div>
       <span> {props.color} </span>
       <Button
@@ -16,7 +15,6 @@ const ColorSwatch = (props) => {
       >
         Delete
       </Button>
-
     </div>
   );
 };

@@ -14,16 +14,12 @@ class App extends React.Component {
     this.addColor = this.addColor.bind(this);
   }
   removeColor(color) {
-    console.log(color);
-
-    let some = this.state.colors.filter((pattern) => {
+    let newColors = this.state.colors.filter((pattern) => {
       return pattern !== color;
     });
     this.setState({
-      colors: some,
+      colors: newColors,
     });
-
-    console.log(some);
   }
 
   addColor() {
@@ -46,14 +42,14 @@ class App extends React.Component {
               <h3>Click the button to generate random colors.</h3>
             </div>
           ) : (
-              <div className="outer-div">
-                {this.state.colors.map((item) => {
-                  return (
-                    <ColorSwatch color={item} removeHandler={this.removeColor} />
-                  );
-                })}
-              </div>
-            )}
+            <div className="outer-div">
+              {this.state.colors.map((item) => {
+                return (
+                  <ColorSwatch color={item} removeHandler={this.removeColor} />
+                );
+              })}
+            </div>
+          )}
           <Button
             node="button"
             waves="light"
